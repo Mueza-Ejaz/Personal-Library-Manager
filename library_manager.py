@@ -11,7 +11,7 @@ library = []
 def load_library(): # ye function sirf library.txt ka  data load karwaii ga
     global library
     try:
-        with open("library.txt", "r", encoding="utf-8") as file:
+        with open("library.json", "r", encoding="utf-8") as file:
             content = file.read()
             library = json.loads(content) if content.strip() else []
         print("\n Data loaded successfully!\n")
@@ -22,7 +22,7 @@ def load_library(): # ye function sirf library.txt ka  data load karwaii ga
 # Save data in library.txt:
 
 def save_library():
-    with open("library.txt", "w", encoding="utf-8") as file:
+    with open("library.json", "w", encoding="utf-8") as file:
         json.dump(library, file, indent=4, ensure_ascii=False)
     print("\n Library saved successfully!\n")
 

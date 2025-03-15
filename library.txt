@@ -1,7 +1,7 @@
 [
     {
         "title": "Python",
-        "author": "Zia Khan",
+        "author": "Mueza Ejaz",
         "year": "1997",
         "genre": "Programming",
         "read": true

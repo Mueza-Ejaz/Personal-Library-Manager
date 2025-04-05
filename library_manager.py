@@ -8,7 +8,7 @@ library = []
 
 # Load existing library data
 
-def load_library(): # ye function sirf library.txt ka  data load karwaii ga
+def load_library(): # ye function sirf library.json ka  data load karwaii ga
     global library
     try:
         with open("library.json", "r", encoding="utf-8") as file:
@@ -19,7 +19,7 @@ def load_library(): # ye function sirf library.txt ka  data load karwaii ga
         library = []
 
 
-# Save data in library.txt:
+# Save data in library.json:
 
 def save_library():
     with open("library.json", "w", encoding="utf-8") as file:
